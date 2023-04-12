@@ -1,0 +1,38 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "disk /"
+order += "battery all"
+order += "tztime local"
+order += "wireless wlp63s0"
+
+battery all {
+        format = "%status %percentage %remaining"
+        status_chr = "⚡ CHR"
+        status_bat = "🔋 BAT"
+        low_threshold = 13
+}
+
+tztime local {
+        format = "%Y-%d-%m %H:%M:%S"
+}
+
+
+disk "/" {
+        format = "%avail"
+}
+
+wireless wlp63s0 {
+        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
