@@ -11,13 +11,14 @@ general {
         interval = 5
 }
 
-order += "disk /"
-order += "battery all"
+order += "volume master"
+order += "battery 1"
 order += "tztime local"
 order += "wireless wlp63s0"
+order += "disk /"
 
-battery all {
-        format = "%status %percentage %remaining"
+battery 1 {
+        format = "%status %percentage"
         status_chr = "⚡ CHR"
         status_bat = "🔋 BAT"
         low_threshold = 13
@@ -29,10 +30,20 @@ tztime local {
 
 
 disk "/" {
-        format = "%avail"
+        format = "%free"
 }
 
 wireless wlp63s0 {
-        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_up = "%essid, %bitrate, %ip"
         format_down = "W: down"
+}
+
+volume master {
+    align ="center"
+    format = "♪: %volume"
+
+    format_muted = "♪: muted (%volume)"
+
+    device = "default"
+
 }
