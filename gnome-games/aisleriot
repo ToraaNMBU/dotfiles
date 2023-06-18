@@ -1,0 +1,13 @@
+[Aisleriot Config]
+ShowToolbar=true
+ShowStatusbar=true
+Sound=true
+Animations=true
+Recent=klondike;spider;golf;
+Variation=klondike.scm
+
+[klondike.scm]
+Statistic=2;32;226;302;
+
+[spider.scm]
+Statistic=0;1;0;0;

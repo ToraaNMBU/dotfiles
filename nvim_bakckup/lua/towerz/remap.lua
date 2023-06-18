@@ -37,7 +37,7 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") 
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
@@ -47,7 +47,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/towerz/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+vim.keymap.set("n", "<leader><CR>", "<cmd>Copilot panel<CR><C-w><S-l>");
 
+vim.keymap.set("n", "<leader>cmk", "<cmd>e ../CMakeLists.txt<CR>"); 
+
+--vim.keymap.set("n", "<leader>rt", <cmd>lua require('ros-nvim.test').rostest()<cr>
+vim.keymap.set("n", "<leader>-", "<cmd>!clear;python3 %<CR>")

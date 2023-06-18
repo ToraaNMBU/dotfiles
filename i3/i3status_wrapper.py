@@ -51,7 +51,7 @@ if __name__ == '__main__':
         j.insert(0, {
             # 'background': '#FFFFFF',
             'full_text': '%s' % music_title,
-            'color': '#aa0891',
+            'color': '#10f4e',
             'name': 'music_title',
             'separator_block_width': 25})
 

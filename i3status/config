@@ -19,10 +19,13 @@ order += "disk /"
 
 battery 1 {
         format = "%status %percentage"
+        format_percentage = "%.00f%s"
         status_chr = "⚡ CHR"
         status_bat = "🔋 BAT"
         low_threshold = 13
+        threshold_type = percentage
 }
+
 
 tztime local {
         format = "%Y-%d-%m %H:%M:%S"
