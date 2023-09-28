@@ -166,10 +166,11 @@ bindsym $mod+r mode "resize"
 
 gaps inner 5
 
+exec_always  /home/tor_erik/.config/i3status/xkb_layout.sh | xargs -I {} notify-send "Keyboard Layout" {}
 
 bar {
         position top
-        status_command i3status | ~/.config/i3/i3status_wrapper.py
+        status_command i3status | ~/.config/i3/i3status_wrapper.py 
         tray_output primary 
         tray_output DP-1
         font pango:DejaVu Sans Mono 9
@@ -198,7 +199,6 @@ bindsym $mod+Shift+period exec systemctl suspend
 
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh # Bar
 exec_always --no-startup-id $HOME/.config/i3/remap.sh & # remap esc to caps
-exec_always --no-startup-id $HOME/.local/activitywatch/aw-qt & # activitywatch
 
 
 

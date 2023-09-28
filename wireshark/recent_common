@@ -15,10 +15,10 @@
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 800
-gui.geometry_main_y: 20
-gui.geometry_main_width: 800
-gui.geometry_main_height: 880
+gui.geometry_main_x: 1069
+gui.geometry_main_y: 25
+gui.geometry_main_width: 526
+gui.geometry_main_height: 870
 
 # Main window maximized.
 # TRUE or FALSE (case-insensitive).

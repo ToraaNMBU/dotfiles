@@ -1,0 +1,3 @@
+[libi3] ../i3bar/src/main.c i3bar version 4.22 (2023-01-02)
+[libi3] ../i3bar/src/ipc.c Using first bar config: bar-0. Use --bar_id to manually select a different bar configuration.
+[libi3] ../libi3/font.c Using Pango font DejaVu Sans Mono, size 9
