@@ -3,16 +3,14 @@
 
 ## Requirements
 
-### Git
+### Git && Stow
 
 ```
 sudo apt install git -y
+sudo apt install stow -y
+
 ```
 
-### Stow
-```
-sudo apt install stow -y
-```
 
 ## Installation
 
@@ -20,7 +18,7 @@ Checkout this branch
 
 
 ```
-git checkout git@github.com:ToraaNMBU/dotfiles.git -b ubuntu22.04
+git clone git@github.com:ToraaNMBU/dotfiles.git -b ubuntu22.04
 cd dotfiles
 ```
 
