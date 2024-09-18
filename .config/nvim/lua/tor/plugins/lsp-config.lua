@@ -30,6 +30,10 @@ return {
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
 			})
+			-- add support for cpp and c using clang
+			lspconfig.clangd.setup({
+				capabilities = capabilities,
+			})
 
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
