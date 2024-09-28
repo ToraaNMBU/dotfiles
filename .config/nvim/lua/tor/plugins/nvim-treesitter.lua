@@ -19,6 +19,8 @@ return {
 					"markdown_inline",
 					"bash",
 					"lua",
+					"c",
+					"cpp",
 					"vim",
 					"python",
 					"htlm",
