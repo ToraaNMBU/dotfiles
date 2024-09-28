@@ -18,7 +18,7 @@ Checkout this branch
 
 
 ```
-git clone git@github.com:ToraaNMBU/dotfiles.git -b ubuntu22.04
+git clone https://github.com/ToraaNMBU/dotfiles.git -b ubuntu22.04
 cd dotfiles
 ```
 
